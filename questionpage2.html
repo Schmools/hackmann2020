@@ -13,32 +13,33 @@
     <div id="header"></div>
 
     <div id="questionNumber">
-      <h3>Question {{question_number}} Of 5</h3>
+      <h2>Question {{question_number}} Of 5</h2>
     </div>
 
     <div id="question">
-      <h2>{{question}}</h2>
+      <h3>{{question}}</h3>
     </div>
 
     <div class="resultsColumn">
       <div class="yesColumn">
         <h4>Yes</h4>
-        <p>{{yesResults}}</p>
+        <div id= "data">{{yesResults}}</div>
       </div>
 
       <div class="noColumn">
         <h4>No</h4>
-        <p>{{noResults}}</p>
+        <div id= "data">{{noResults}}</div>
       </div>
     </div>
 
     <div id="nextButton">
-      <a href="questionpage1.html"
+      <a href= nextLink
       ><button
         style="
           width: 100px;
           height: 50px;
           border-radius: 10px;
+          background-color: #f1e4d6;
         "
       >
         Next
@@ -63,8 +64,14 @@
 
     <!-- Comments Section -->
     <div class="commentsSection">
-      <h5 class="mt-0">{{name}}</h5>
-      <p> {{comment}} </p>
+      <div id = "nameInComments">
+        {{name}}
+      </div>
+
+      <div id = "commentInComments">
+        {{comment}}
+      </div>
+
     </div>
 
     <div class = "footer">

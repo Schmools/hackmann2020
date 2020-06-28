@@ -4,52 +4,43 @@
   <head>
     <meta charset="utf-8" />
     <title>Hotdog Stew The Game!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
 
   <body>
-    <h1>Hotdog Stew The Game!</h1>
-
-    <div id="header"></div>
-
-    <div id="questionNumber">
-      <h3>Question {{question_number}} Of 5</h3>
+    <div id="topOfPage">
+      <h1>Hotdog Stew The Game!</h1>
+      <h2>Question {{question_number}} Of 5</h2>
     </div>
 
     <div id="question">
-      <h2>{{question}}</h2>
+      <h3>{{question}}</h3>
     </div>
 
+    <form method='POST' action="/q">
     <div id="yesNoButtons">
-      <a href="questionpage2.html"
-        ><button
+      <input type ="submit" name="yes" value="yes"
           style="
             display: inline-block;
             width: 100px;
             height: 50px;
             border-radius: 10px;
-            background-color: floralwhite;
+            background-color: #f1e4d6;
           "
         >
-          Yes
-        </button></a
-      >
-      <a href="questionpage2.html"
-        ><button
-          style="
+             <input type ="submit" name="no" value="no"
+                    style="
             display: inline-block;
             width: 100px;
             height: 50px;
             border-radius: 10px;
-            background-color: floralwhite;
+            background-color: #f1e4d6;
           "
         >
-          No
-        </button></a
-      >
-    </div>
+           </div>
+    </form>
 
-    <div class="ranndomComment">
+    <div class="randomComment">
       <div id="chosenComment">
         <h6>Here Is A Random Comment From A Prior Taker Of This Quiz!</h6>
         {{random_comment}}

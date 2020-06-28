@@ -115,3 +115,9 @@ body {
 #name {
   text-align: center;
 }
+
+#main {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    }

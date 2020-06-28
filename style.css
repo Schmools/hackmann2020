@@ -3,12 +3,12 @@ h1 {
   font-size: 40px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 2;
 }
 
 h2 {
   color: #b1cdab;
   font-size: 20px;
+  line-height: 10px;
 }
 
 h3 {
@@ -18,6 +18,7 @@ h3 {
 
 h4 {
   font-size: 20px;
+  color: white;
 }
 
 h5 {
@@ -34,8 +35,8 @@ body {
   line-height: 1;
 }
 
-#questionNumber {
-  padding-top: -25px;
+#topOfPage {
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -132,7 +133,7 @@ body {
 }
 
 #data {
-  font-size: 20px;
+  font-size: 170%;
   color: #931009;
 }
 

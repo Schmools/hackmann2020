@@ -16,9 +16,13 @@ h3 {
   font-size: 15px;
 }
 
+h6 {
+  color: #b1cdab;
+  font-size: 20px;
+}
+
 body {
   line-height: 1;
-  background-color: #f1e4d6;
 }
 
 #questionNumber {
@@ -32,27 +36,45 @@ body {
 }
 
 #yesNoButtons {
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: center;
+  padding-bottom: 60px;
 }
 
-#randomcomment {
-  padding-top: 70px;
+.ranndomComment {
+  border-style: solid;
+  border-color: #931009;
+  border-width: 3px 0px 3px 0px;
+  height: 200px;
+  margin: 30px;
+}
+
+#chosenComment {
+  text-align: center;
+  padding-top: 10px;
 }
 
 #nextButton {
-  padding-top: 60px;
+  padding-top: 70px;
   text-align: center;
   display: block;
   margin: auto;
 }
 
-#comments {
-  padding-top: 70px;
+#h5comment {
+  padding-top: 30px;
 }
 
-#footer {
-  padding-top: 300px;
+#commentBox {
+  padding-top: 5px;
+}
+
+#submitCommentButton {
+  padding-top: 15px;
+}
+
+.footer {
+  padding-top: 80px;
 }
 
 .resultsColumn {
@@ -80,5 +102,16 @@ body {
   width: 35%;
   height: 150px;
   margin: 10px;
+  text-align: center;
+}
+
+#intro {
+  margin-top: 1;
+  padding: 10px;
+  height: 350px;
+  text-align: center;
+}
+
+#name {
   text-align: center;
 }

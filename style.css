@@ -1,17 +1,26 @@
 h1 {
   color: #931009;
-  font-size: 25px;
+  font-size: 40px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 2;
 }
 
 h2 {
+  color: #b1cdab;
+  font-size: 20px;
+}
+
+h3 {
   color: #c48d54;
   font-size: 30px;
 }
 
-h3 {
+h4 {
+  font-size: 20px;
+}
+
+h5 {
   color: #b1cdab;
   font-size: 15px;
 }
@@ -70,7 +79,24 @@ body {
 }
 
 #submitCommentButton {
-  padding-top: 15px;
+  padding-top: 10px;
+}
+
+#nameInComments {
+  color: #c48d54;
+  font-size: 20px;
+}
+
+.commentsSection {
+  padding-top: 40px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#commentInComments {
+  color: black;
+  font-size: 15px;
+  padding-top: 5px;
 }
 
 .footer {
@@ -96,13 +122,18 @@ body {
 
 .noColumn {
   float: right;
-  background-color: cornflowerblue;
+  background-color: #ffdb58;
   color: #ffffff;
   border-radius: 25px;
   width: 35%;
   height: 150px;
   margin: 10px;
   text-align: center;
+}
+
+#data {
+  font-size: 20px;
+  color: #931009;
 }
 
 #intro {
@@ -117,7 +148,7 @@ body {
 }
 
 #main {
-    width: 60%;
-    margin: auto;
-    padding: 10px;
-    }
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}

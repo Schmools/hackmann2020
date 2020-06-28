@@ -45,14 +45,26 @@
       </button></a
     >
 
-    <div id="comments">
-      <div class="large-8 columns">
-        <body class="body">
-          <div class="container-fluid">
-            {% include 'includes/commentbox.html' %}
-          </div>
-        </body>
+   
+    <!-- Comment Submission -->
+    <form method="commentSubmission">
+      <div id="h5comment">
+        <h5> Feel Free To Make A Comment:</h5>
       </div>
+
+      <div id="commentBox">
+        <input type="text" id="comment" name="comment"><br>
+      </div>
+
+      <div id="submitCommentButton">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <!-- Comments Section -->
+    <div class="commentsSection">
+      <h5 class="mt-0">{{name}}</h5>
+      <p> {{comment}} </p>
     </div>
 
     <div id="footer">
@@ -61,5 +73,6 @@
         Samuel Shuur
       </p>
     </div>
+
   </body>
 </html>

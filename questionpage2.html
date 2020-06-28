@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hotdog Stew The Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Hotdog Stew The Game!</h1>
+
+    <div id="header"></div>
+
+    <div id="questionNumber">
+      <h3>Question {{question_number}} Of 5</h3>
+    </div>
+
+    <div id="question">
+      <h2>{{question}}</h2>
+    </div>
+
+    <div class="resultsColumn">
+      <div class="yesColumn">
+        <h4>Yes</h4>
+        <p>{{yesResults}}</p>
+      </div>
+
+      <div class="noColumn">
+        <h4>No</h4>
+        <p>{{noResults}}</p>
+      </div>
+    </div>
+
+    <div id="nextButton">
+      <a href="questionpage1.html"
+      ><button
+        style="
+          width: 100px;
+          height: 50px;
+          border-radius: 10px;
+        "
+      >
+        Next
+      </button></a
+    >
+
+    <div id="comments">
+      <div class="large-8 columns">
+        <body class="body">
+          <div class="container-fluid">
+            {% include 'includes/commentbox.html' %}
+          </div>
+        </body>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>
+        &copy The Hotdog Stew Team: Arya Patel, Carmel Peer, Jolie Nelsen,
+        Samuel Shuur
+      </p>
+    </div>
+  </body>
+</html>
